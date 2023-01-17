@@ -1,0 +1,455 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    color: #000000;
+}
+
+body > div > div {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* TIPOGRAPHY */
+
+h1 {
+    margin: 2rem auto;
+
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.15;
+}
+
+h2 {
+    margin: 2rem auto;
+
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.15;
+}
+
+li {
+    list-style-type: none;
+  }
+  
+li::before {
+    content: "\2705";
+    color: green;
+    margin-right: 10px;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+/* BG COLORS */
+
+.purple-bg {
+    color: #FFFFFF;
+    background-color: #8066E1;
+}
+
+.l_purple-bg {
+    color: #FFFFFF;
+    background-color: #AF99FF;
+}
+
+.gray-bg {
+    color: #000000;
+    background-color: #F4F5F7;
+}
+
+.black-bg {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+/* BTNS */
+
+.scroll-btn {
+    display: block;
+    max-width: 80%;
+    margin: 3rem auto 2rem auto;
+    padding: 1rem;
+
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+
+    span {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    color: #FFFFFF;
+    background-color: #52AD00;
+    box-shadow: 0px 5px 10px #00000025;
+    border-radius: 50px;
+
+    animation: 0.5s infinite alternate pulse;
+}
+
+.buy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 3rem auto 2rem auto;
+    padding: 1rem;
+
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    background-color: #52AD00;
+    border-radius: 50px;
+
+    animation: 0.5s infinite alternate pulse;
+
+    img {
+        margin: 0 7px 0 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        scale: (0.95);
+    }
+
+    100% {
+        scale: (1.0);
+    }
+}
+
+
+/* DELOPED */
+
+.developed {
+    max-width: 555px;
+    margin: 0 auto 2rem auto;
+    padding: 0.6rem;
+    text-align: center;
+    
+    color: #FFFFFF;
+    background-color: #8066E1;
+
+    p {
+        margin: 0;
+    }
+}
+
+/* HAIR TYPES */
+
+.hair-types {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+
+    img {
+        max-width: 125px;
+        border: 5px solid #8066E1;
+        border-radius: 100px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+/* PRICE COMPARE */
+
+.price-compare {
+    display: flex;
+}
+
+.price-compare-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    color: #000000;
+    background-color: #FFF;
+    border: 2px solid #E4E5E7;
+    border-radius: 25px;
+
+    p {
+        text-align: center;
+    }
+}
+
+/* PRODUCT INFO */
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2rem auto;
+
+    img {
+        margin: 0 3rem 0 0;
+    }
+}
+
+/* LABORATORY */
+
+.laboratory {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+
+    img {
+        max-width: 85px;
+        border-radius: 75px;
+        box-shadow: 0px 5px 10px #00000025;
+    }
+    
+    p {
+        display: block;
+        margin: 0 0 0 1.6rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* SALON QUALITY */
+
+.salon-quality {
+    background-color: #E4E5E7;
+    border-radius: 25px 25px 0px 0px;
+
+    h2 {
+        display: block;
+        padding: 1rem;
+        margin: 2rem auto 0 auto;
+
+        font-weight: 700;
+
+        color: #FFFFFF;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+
+    .baf {
+        margin: 1rem auto;
+
+        .baf-img {
+            display: flex;
+            
+            img {
+                max-width: 150px;
+                border-radius: 75px;
+                border: 4px solid #000;
+            }
+        }
+    
+        .baf-text {
+            display: flex;
+            margin-top: -20px;
+    
+            p {
+                margin: 0 auto;
+                padding: 0.5rem;
+                color: #FFFFFF;
+                background-color: #000000;
+            }
+        }
+    }
+
+    p {
+        display: block;
+        padding: 1rem;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+}
+
+/* OFERTA */
+
+.oferta {
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 5px dashed #FF0000;
+
+    p {
+        font-size: 2rem;
+    }
+
+    .economy {
+        max-width: 80%;
+        display: block;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+
+        font-size: 1.6rem;
+        text-align: center;
+
+        color: #FFFFFF;
+        background-color: #0000FF;
+        border-radius: 15px;
+    }
+
+    .shipping {
+        max-width: 80%;
+        display: block;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+
+        font-size: 1.6rem;
+        text-align: center;
+
+        color: #FFFFFF;
+        background-color: #000000;
+        border-radius: 15px;
+    }
+
+    .limited {
+        max-width: 80%;
+        display: block;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+
+        font-size: 1.6rem;
+        text-align: center;
+
+        color: #FFFFFF;
+        background-color: #8066E1;
+        border-radius: 15px;
+    }
+}
+
+.answer {
+    margin: 4rem auto 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px #00000050;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/* FOOTER */
+
+#footer {
+
+    /* REVIEWS */
+
+    .reviews {
+        padding-bottom: 0;
+    }
+
+    .review {
+        margin: 1.6rem auto;
+        padding: 2rem;
+
+        font-size: 16px;
+        text-align: left;
+
+        color: #000000;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+
+        div {
+            display: flex;
+            margin-bottom: 1rem;
+
+            p {
+                margin: 1rem auto;
+            }
+
+            img {
+                margin: 0 1rem 0 0;
+                padding: 0;
+            }
+        }
+
+        div.client-review {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+            p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            img {
+                margin: 0 1rem 0 0;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    /* FAQ */
+
+    /* INTITUTIONAL */
+
+    .institutional {
+        padding-top: 0;
+
+        font-size: 1.4rem;
+        text-align: center;
+    
+        a {
+            text-align: center;
+            color: #FFFFFF;
+        }
+    
+        img {
+            margin: 2rem auto;
+            padding: 0.5rem 1rem;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bg01 {
+        background-image: url(media/bg01.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
